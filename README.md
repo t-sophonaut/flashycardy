@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## 🃏 Flashy Cardy - Smart Flashcard Learning App
+
+A modern flashcard application built with Next.js 15, featuring:
+- 🔐 Secure authentication with Clerk
+- 📚 Interactive flashcard decks
+- 📊 Progress tracking and analytics
+- 🎨 Beautiful UI with shadcn/ui components
+- 💾 PostgreSQL database with Drizzle ORM
+
 ## Getting Started
 
 First, run the development server:
