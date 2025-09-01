@@ -7,7 +7,6 @@ import {
 import { auth, currentUser } from "@clerk/nextjs/server";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default async function DashboardPage() {
   const { userId } = await auth();
@@ -220,21 +219,21 @@ export default async function DashboardPage() {
                 <div className="flex items-center space-x-4">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium">Completed "Spanish Vocabulary" deck</p>
+                    <p className="text-sm font-medium">Completed &quot;Spanish Vocabulary&quot; deck</p>
                     <p className="text-xs text-muted-foreground">2 hours ago</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium">Added 3 new cards to "Math Formulas"</p>
+                    <p className="text-sm font-medium">Added 3 new cards to &quot;Math Formulas&quot;</p>
                     <p className="text-xs text-muted-foreground">Yesterday</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium">Created new deck "History Facts"</p>
+                    <p className="text-sm font-medium">Created new deck &quot;History Facts&quot;</p>
                     <p className="text-xs text-muted-foreground">2 days ago</p>
                   </div>
                 </div>

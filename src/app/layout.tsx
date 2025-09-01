@@ -10,6 +10,7 @@ import {
 } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -42,13 +43,13 @@ export default function RootLayout({
             <div className="max-w-7xl mx-auto flex justify-between items-center">
               <div className="flex items-center space-x-8">
                 <h1 className="text-2xl font-bold">
-                  <a href="/" className="hover:text-primary">Flashy Cardy</a>
+                  <Link href="/" className="hover:text-primary">Flashy Cardy</Link>
                 </h1>
                 <nav className="flex items-center space-x-6">
                   <SignedIn>
-                    <a href="/dashboard" className="text-sm hover:text-primary transition-colors">
+                    <Link href="/dashboard" className="text-sm hover:text-primary transition-colors">
                       Dashboard
-                    </a>
+                    </Link>
                   </SignedIn>
                 </nav>
               </div>
